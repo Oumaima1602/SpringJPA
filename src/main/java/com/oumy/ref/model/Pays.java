@@ -32,6 +32,10 @@ public class Pays {
 			)
 	private List<Region> regions = new ArrayList<>();
 
+	public Pays() {
+		super();
+	}
+
 	public List<Region> getRegions() {
 		return regions;
 	}
@@ -61,10 +65,6 @@ public class Pays {
 		this.pays_fr = pays_fr;
 	}
 
-	public Pays() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 	
 	public void addRegion(Region region) {
 		regions.add(region);

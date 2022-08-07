@@ -36,6 +36,10 @@ public class Region {
 	@JoinColumn(name = "id_pays")
 	private Pays pays;
 
+	public Region() {
+		super();
+	}
+
 	public Region(long id_region, String region_fr, String region_ar) {
 		super();
 		this.id_region = id_region;
@@ -76,10 +80,7 @@ public class Region {
 		this.region_ar = region_ar;
 	}
 
-	public Region() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+
 
 	public Region(Region region) {
 		// TODO Auto-generated constructor stub
